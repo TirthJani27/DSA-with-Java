@@ -1,4 +1,3 @@
-package com.dsa.javalearning.PracticeQuestion;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package com.dsa.javalearning.PracticeQuestion;
+
 
 public class Prractice {
     public static void main(String[] args) {

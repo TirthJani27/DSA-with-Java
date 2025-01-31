@@ -1,4 +1,3 @@
-package com.dsa.javalearning.PracticeQuestion;
 import java.io.*;
 import java.net.*;
 public class Client {

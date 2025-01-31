@@ -1,4 +1,4 @@
-package com.dsa.javalearning.PracticeQuestion;
+
 import java.util.Stack;
 public class infixToprefix {
     public static void main(String[] args) {

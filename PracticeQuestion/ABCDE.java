@@ -1,4 +1,3 @@
-package com.dsa.javalearning.PracticeQuestion;// Java program to implement solution of producer
 // consumer problem.
 
 import java.util.LinkedList;

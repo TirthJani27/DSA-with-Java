@@ -1,5 +1,3 @@
-package com.dsa.javalearning.PracticeQuestion;
-
 public class Sudoku {
     static boolean isSafe(int a[][],int row,int col,int val) {
         // add your code here

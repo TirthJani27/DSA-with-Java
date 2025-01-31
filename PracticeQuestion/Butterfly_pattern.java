@@ -1,4 +1,4 @@
-package com.dsa.javalearning.PracticeQuestion;
+
 import java.util.*;
 
 public class Butterfly_pattern{

@@ -1,6 +1,3 @@
-package com.dsa.javalearning.PracticeQuestion;
-
-import com.dsa.javalearning.heaps.HeapSort;
 
 import java.util.*;
 
