@@ -1,9 +1,6 @@
-
-import java.util.*;
-
 public class StrongNumber {
     public static void main(String[] args) {
-        char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+        char[][] board = {{'A', 'B', 'C', 'F'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'A'}};
         System.out.println(exist(board, "SEE"));
     }
 
