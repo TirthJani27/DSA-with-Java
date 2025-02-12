@@ -1,4 +1,4 @@
-public class DepthOfBTree{
+public class Diameter {
     static class Node{
         int data ;
         Node left;
@@ -22,17 +22,23 @@ public class DepthOfBTree{
             return newNode;
         }
     }
-    public static int height(Node root ){
+    static int max = 0;
+    public static int height (Node root){
         if(root == null){
             return 0;
         }
-        return  1 + Math.max(height(root.left),height(root.right)); 
+        int heightL = height(root.left);
+        int heightR = height(root.right);
+        if(max < heightL + heightR){
+            max = heightL + heightR;
+        }
+        return 1 + Math.max(heightL,heightR);
     }
-
     public static void main(String[] args) {
-        int[] nodes={15,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+        int[] nodes={1,2,-1,-1,-1};
         BinaryTree BT = new BinaryTree();
         Node root = BT.build(nodes);
-        System.out.println(height(root));
+        height(root);
+        System.out.println("Diameter of the tree: "+max);
     }
 }
