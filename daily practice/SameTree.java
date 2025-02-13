@@ -23,10 +23,9 @@ public class SameTree {
             return newNode;
         }
     }
-    public static void main(String[] args) {
-        
-    }
-    public boolean isSameTree(DepthOfBTree.Node p, DepthOfBTree.Node q) {
+    public static void main(String[] args) {}
+    
+    public boolean isSameTree(Node p,Node q) {
         if(p == null && q == null){
             return true;
         }
