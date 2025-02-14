@@ -3,9 +3,6 @@ import javax.swing.tree.TreeNode;
 public class CheckSubTree {
     static class TreeNode{
         int data ;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int data){
             this.data=data;
             right=null;
             left=null;
