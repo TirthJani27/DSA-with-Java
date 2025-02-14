@@ -46,6 +46,5 @@ public class CheckSubTree {
         int[] nodes={1,2,-1,-1,-1};
         BinaryTree BT = new BinaryTree();
         TreeNode root = BT.build(nodes);
-        
     }    
 }
