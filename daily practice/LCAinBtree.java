@@ -49,6 +49,5 @@ class LCAinBTree{
         int[] nodes={15,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree BT = new BinaryTree();
         TreeNode root = BT.build(nodes);
-
     }
 }

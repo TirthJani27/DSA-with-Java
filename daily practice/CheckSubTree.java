@@ -2,46 +2,54 @@ import javax.swing.tree.TreeNode;
 
 public class CheckSubTree {
     static class TreeNode{
-        int data ;
-            this.data=data;
-            right=null;
-            left=null;
+        int data;
+        TreeNode left, right;
+
+        TreeNode(int data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
         }
     }
-    static class BinaryTree{
-        static int i=-1;
-        public static TreeNode build(int[] arr){
+
+    class BinaryTree{
+        int i = -1;
+        public TreeNode build(int[] arr){
             i++;
-            if(arr[i]==-1){
+            if(arr[i] == -1){
                 return null;
             }
             TreeNode newNode = new TreeNode(arr[i]);
-            newNode.left=build(arr);
-            newNode.right=build(arr);
+            newNode.left = build(arr);
+            newNode.right = build(arr);
             return newNode;
         }
     }
+
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
         if(root == null && subRoot == null){
             return true ;
         }
-        if(root.data == subRoot.data){
+        if(root != null && subRoot != null && root.data == subRoot.data){
             return match(root, subRoot);
         }
-        return isSubtree(root.right, subRoot) && isSubtree(root.left, subRoot);
+        return root != null && (isSubtree(root.right, subRoot) || isSubtree(root.left, subRoot));
     }
-    public boolean match(TreeNode p,TreeNode q){
+
+    public boolean match(TreeNode p, TreeNode q){
         if(p == null && q == null){
             return true;
         }
-        if( p == null && q != null ||  p != null && q == null || p.data != q.data){
+        if(p == null || q == null || p.data != q.data){
             return false;
         }
-        return match(p.left,q.left) && match(p.right,q.right);
+        return match(p.left, q.left) && match(p.right, q.right);
     }
+
     public static void main(String[] args) {
-        int[] nodes={1,2,-1,-1,-1};
-        BinaryTree BT = new BinaryTree();
+        int[] nodes = {1, 2, -1, -1, -1};
+        CheckSubTree checkSubTree = new CheckSubTree();
+        BinaryTree BT = checkSubTree.new BinaryTree();
         TreeNode root = BT.build(nodes);
     }    
 }
