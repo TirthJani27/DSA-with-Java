@@ -3,7 +3,7 @@ class SearchIn2DMatrix {
 
     public static boolean searchMatrix(int[][] mat, int tar) {
         for (int i = 0; i < mat.length; i++) {
-            if (mat[i][mat[0].length-1] > tar) {
+            if (mat[i][mat[0].length - 1] > tar) {
                 int left = 0;
                 int right = mat[0].length - 1;
                 while (left < right) {
