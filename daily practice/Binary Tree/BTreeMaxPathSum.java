@@ -47,7 +47,5 @@ public class BTreeMaxPathSum {
         BTreeMaxPathSum checkSubTree = new BTreeMaxPathSum();
         BinaryTree BT = checkSubTree.new BinaryTree();
         TreeNode root = BT.build(nodes);
-        // System.out.println(maxPathSum(root));
-
     }
 }
