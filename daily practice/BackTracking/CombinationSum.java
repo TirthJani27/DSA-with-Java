@@ -20,7 +20,7 @@ public class CombinationSum {
         }
         temp.add(arr[idx]);
         sum += arr[idx];
-        dfs(ans, temp, arr, tar, sum, idx);
+        dfs(ans, temp,  arr, tar, sum, idx);
         temp.remove(temp.size() - 1);
         sum -= arr[idx];
         dfs(ans, temp, arr, tar, sum, idx + 1);
