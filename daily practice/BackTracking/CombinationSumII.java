@@ -20,7 +20,6 @@ public class CombinationSumII {
             return;
         }
 
-        // visited = new HashSet<>();
         for (int i = index; i < candidates.length; i++) {
             if (i > index && candidates[i] == candidates[i - 1]) {
                 continue;
