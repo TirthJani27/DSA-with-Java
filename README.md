@@ -32,31 +32,6 @@ In this repository, you'll find:
 3. Browse through the folder structure, where each sub-folder corresponds to a different data structure/algorithm.
 4. Open the Java files in any IDE (like IntelliJ IDEA, Eclipse, or VS Code) to run the code.
 
-## 🔧 Folder Structure
-
-bash
-DSA-in-Java/
-│
-├── Arrays/
-│ ├── Searching/
-│ ├── Sorting/
-│ └── Others/
-│
-├── LinkedList/
-│
-├── Trees/
-│ ├── BinaryTrees/
-│ ├── BinarySearchTrees/
-│ └── AVL/
-│
-├── Graphs/
-│ └── BFS-DFS/
-│
-└── DynamicProgramming/
-
-- Each folder contains a set of Java files representing solutions to specific problems.
-- Feel free to explore, contribute, and suggest improvements!
-
 ## 📅 Daily Practice
 
 - I am committed to improving my DSA skills one problem at a time! You can check the DailyPractice branch or refer to the commit history for a timeline of my progress.
