@@ -1,4 +1,5 @@
 {
   "C_Cpp.errorSquiggles": "enabled",
-  "C_Cpp.default.compilerPath": "d:\\DSA-with-Java\\daily practice\\Advance C Program\\test.c"
+  "C_Cpp.default.compilerPath": "d:\\DSA-with-Java\\daily practice\\Advance C Program\\test.c",
+  "java.debug.settings.onBuildFailureProceed": true
 }

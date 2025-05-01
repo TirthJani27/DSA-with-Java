@@ -1,4 +1,4 @@
-package com.dsa.javalearning.binarySearchTrees;
+package binarySearchTrees;
 public class DeletingNode {
     public static void main(String[] args) {
         Node root=new Node(50);
