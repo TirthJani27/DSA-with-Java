@@ -1,4 +1,4 @@
-package com.dsa.javalearning.Binary_trees;
+package Binary_trees;
 
 public class Kth_level {
     static class Node {
@@ -25,19 +25,19 @@ public class Kth_level {
             }
         }
     }
-    public static void kth_level(int k,int level,Node root){
-        if(root==null){
+
+    public static void kth_level(int k, int level, Node root) {
+        if (root == null) {
             return;
         }
-        if(level==k){
-            System.out.println(root.data+" ");
+        if (level == k) {
+            System.out.println(root.data + " ");
             return;
 
         }
-        kth_level(k,level+1,root.left);
-        kth_level(k,level+1,root.right);
+        kth_level(k, level + 1, root.left);
+        kth_level(k, level + 1, root.right);
     }
-
 
     public static void main(String[] args) {
         Node root = new Node(1);
@@ -47,8 +47,8 @@ public class Kth_level {
         root.left.left = new Node(4);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-        BinaryTree r =new BinaryTree();
-        kth_level(3,1,root);
+        BinaryTree r = new BinaryTree();
+        kth_level(3, 1, root);
 
     }
 }

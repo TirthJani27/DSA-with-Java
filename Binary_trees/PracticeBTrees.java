@@ -1,4 +1,4 @@
-package com.dsa.javalearning.Binary_trees;
+package Binary_trees;
 
 public class PracticeBTrees {
     
