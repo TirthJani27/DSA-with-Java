@@ -10,7 +10,7 @@ public class ValidParenthesisString {
                     if (low > 0)
                         low--;
                     high--;
-                } else { // c == '*'
+                } else { 
                     if (low > 0)
                         low--;
                     high++;
@@ -22,7 +22,7 @@ public class ValidParenthesisString {
         }
 
     public static void main(String[] args) {
-        String s = "(((((()*)(*)*))())())(()())())))((**)))))(()())()";
+        String s = "(((((()*)(*)*))())())(()())())))())))(()())()";
         System.out.println(checkValidString(s));
     }
 }
