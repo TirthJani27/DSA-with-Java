@@ -22,16 +22,7 @@ public class NumberOfIslands {
                 if (grid[i][j] == '1' && !vis[i][j]) {
                     count++;
                     vis[i][j] = true;
-                    for (int k = 0; k < aux.length; k++) {
-                        int currX = aux[k][0] + i;
-                        int currY = aux[k][1] + j;
-                        if (0 <= currX && currX < grid.length && 0 <= currY && currY < grid[0].length
-                                && !vis[currX][currY]
-                                && grid[currX][currY] == '1') {
-                            q.add(new Pair(currX, currY));
-                            vis[currX][currY] = true;
-                        }
-                    }
+                    q.add(new Pair(i, j));
                     while (!q.isEmpty()) {
                         Pair p = q.poll();
                         for (int k = 0; k < aux.length; k++) {
