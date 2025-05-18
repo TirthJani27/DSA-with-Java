@@ -11,11 +11,9 @@ public class EqualSumGridPartitionI {
             }
         }
 
-        // If total sum is odd, no equal partition is possible
         if (total % 2 != 0)
             return false;
 
-        // Try horizontal cuts (between rows)
         for (int cut = 1; cut < m; cut++) {
             int sum = 0;
             for (int i = 0; i < cut; i++) {
