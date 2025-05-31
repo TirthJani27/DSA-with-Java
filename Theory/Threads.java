@@ -1,4 +1,4 @@
-package com.dsa.javalearning.lecture;
+package Theory;
 import java.util.*;
 public class Threads {
     public static void fun(){

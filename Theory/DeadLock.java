@@ -1,4 +1,4 @@
-package com.dsa.javalearning.lecture;
+package Theory;
 
 public class DeadLock {
     String s1 = "Tirth ";

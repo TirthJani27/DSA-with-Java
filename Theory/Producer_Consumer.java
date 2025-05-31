@@ -1,4 +1,4 @@
-package com.dsa.javalearning.lecture;
+package Theory;
 
 class Q {
     int num;

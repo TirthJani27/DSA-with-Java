@@ -1,5 +1,4 @@
-package com.dsa.javalearning.logicBuilding1;
-
+package Patterns;
 import java.util.Scanner;
 
 public class Practice {

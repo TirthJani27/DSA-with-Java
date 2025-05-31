@@ -1,5 +1,4 @@
-package com.dsa.javalearning.logicBuilding1;
-
+package Patterns;
 public class Practice2 {
     public static void main(String[] args) {
         int rows = 5;
