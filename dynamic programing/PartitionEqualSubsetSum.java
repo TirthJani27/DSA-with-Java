@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 public class PartitionEqualSubsetSum {
     public static boolean isSubsetSum(int arr[], int sum) {
-        // return fun(arr, sum, arr.length - 1);
         int[][] dp = new int[sum + 1][sum + 1];
         for (int[] is : dp) {
             Arrays.fill(is, -1);
