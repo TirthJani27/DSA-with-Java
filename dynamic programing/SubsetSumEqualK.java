@@ -33,6 +33,5 @@ public class SubsetSumEqualK {
     public static void main(String[] args) {
         int[] arr = { 1, 12, 3 };
         System.out.println(subarraySum(arr, 15));
-
     }
 }
