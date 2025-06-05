@@ -11,7 +11,6 @@ public class EqualProductArrayPartiton {
         return canPartition(nums, nums.length - 1, target);
     }
 
-    // Helper function to check if a subset product equals target
     public static boolean canPartition(int[] nums, int i, long target) {
         if (target == 1) return true;
         if (i < 0 || target < 1) return false;
@@ -26,7 +25,7 @@ public class EqualProductArrayPartiton {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 3, 1, 6, 8, 4 };
+        int[] arr = { 8, 1, 4, 8, 4 };
         System.out.println(checkEqualPartitions(arr, 0));
     }
 }
