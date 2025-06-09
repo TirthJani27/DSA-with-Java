@@ -1,4 +1,4 @@
-package com.dsa.javalearning.stack;
+package stack;
 
 import java.util.Stack;
 

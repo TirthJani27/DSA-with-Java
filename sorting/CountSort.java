@@ -1,5 +1,4 @@
-package com.dsa.javalearning.sorting;
-
+package sorting;
 public class CountSort {
     public static void main(String[] args) {
 

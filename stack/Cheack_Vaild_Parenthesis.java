@@ -1,5 +1,6 @@
-package com.dsa.javalearning.stack;
+package stack;
 import java.util.*;
+
 public class Cheack_Vaild_Parenthesis {
     public static boolean checkVaildParenthesis(String str){
                 Stack<Character> s = new Stack<>();

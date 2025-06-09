@@ -1,4 +1,5 @@
-package com.dsa.javalearning.stack;
+package stack;
+
 import java.util.Stack;
 public class Reversing_String {
     //using collection framework

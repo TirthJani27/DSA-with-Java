@@ -1,4 +1,4 @@
-package com.dsa.javalearning.stack;
+package stack;
 
 public class Stack_linklist {
     static class Node {

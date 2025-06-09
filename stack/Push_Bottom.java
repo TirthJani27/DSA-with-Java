@@ -1,4 +1,5 @@
-package com.dsa.javalearning.stack;
+package stack;
+
 import java.util.*;
 //using collection framework
 public class Push_Bottom {

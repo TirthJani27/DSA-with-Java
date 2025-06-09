@@ -1,5 +1,4 @@
-package com.dsa.javalearning.sorting;
-
+package sorting;
 public class QuickSort {
     public static void main(String[] args) {
         int[] arr = {1, 18, 19, 10, 5, 6322, -3};

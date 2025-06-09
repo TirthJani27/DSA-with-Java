@@ -1,4 +1,4 @@
-package com.dsa.javalearning.stack;
+package stack;
 
 import java.security.spec.RSAOtherPrimeInfo;
 import java.util.Stack;
