@@ -1,8 +1,5 @@
-public class MinimunInsertionToPalindrome {
-    // Same code as Longest Palindromic Subsequence
-    public static void main(String[] args) {
-        String s1 = "abcaa";
-        String s2 = new StringBuilder(s1).reverse().toString();
+public class MinimumChangesToConvert {
+    public static int minChangesToConvert(String s1, String s2) {
         int dp[][] = new int[s1.length() + 1][s2.length() + 1];
         for (int i = 0; i <= s1.length(); i++) {
             dp[i][0] = 0;
@@ -19,7 +16,10 @@ public class MinimunInsertionToPalindrome {
                 }
             }
         }
-        int ans = s1.length() - dp[s1.length()][s2.length()];
-        System.out.println(ans);
+        return s1.length() + s2.length() - (dp[s1.length()][s2.length()] * 2);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(minChangesToConvert("abc", "bcd"));
     }
 }

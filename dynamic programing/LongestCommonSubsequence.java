@@ -27,7 +27,6 @@ public class LongestCommonSubsequence {
     public static void main(String[] args) {
         String s1 = "abcde";
         String s2 = "ace";
-        s2 = new StringBuilder(s1).reverse().toString();
         int dp[][] = new int[s1.length() + 1][s2.length() + 1];
         for (int i = 0; i <= s1.length(); i++) {
             dp[i][0] = 0;
