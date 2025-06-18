@@ -25,8 +25,22 @@ public class BuySellStocksII {
         return dp[idx][buy] = ans;
     }
 
+    // Tabulation
     public static void main(String[] args) {
         int[] prices = { 7, 10, 5, 31, 2, 1 };
-        System.out.println(maxProfit(prices));
+        int n = prices.length;
+        int[][] dp = new int[n + 1][2];
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = 0; j < 2; j++) {
+                int ans = 0;
+                if (j == 1) {
+                    ans = Math.max(dp[i + 1][0] - prices[i], dp[i + 1][1]);
+                } else {
+                    ans = Math.max(dp[i + 1][1] + prices[i], dp[i + 1][0]);
+                }
+                dp[i][j] = ans;
+            }
+        }
+        System.out.println(dp[0][1]);
     }
 }
