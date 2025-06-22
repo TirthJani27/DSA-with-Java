@@ -2,7 +2,7 @@
 import java.util.Stack;
 public class infixToprefix {
     public static void main(String[] args) {
-        String str = " A+(B*C-(D/E*F)*G)*H";
+        String str = "A+(B*C-(D/E*F)*G)*H";
         Stack<Character> stack = new Stack<>();
         stack.push('(');
         for (int i = 0; i < str.length(); i++) {
