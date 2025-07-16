@@ -38,8 +38,6 @@ public class MaxLengthOfValidSubsequence {
         return;
     }
 
-    
-
     public static void main(String[] args) {
         int[] nums = { 1, 2, 1, 2, 1, 2 };
         System.out.println(maximumLength(nums));
