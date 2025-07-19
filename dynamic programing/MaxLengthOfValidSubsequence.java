@@ -3,44 +3,53 @@ import java.util.ArrayList;
 public class MaxLengthOfValidSubsequence {
     static int count = 2;
 
-    public static int maximumLength(int[] nums) {
-        helper(nums, 0, new ArrayList<>());
+    public static class Pair {
+        int last;
+        int ans;
+
+        Pair(int last, int ans) {
+            this.last = last;
+            this.ans = ans;
+        }
+    }
+
+    public static int maximumLength(int[] nums, int k) {
+        Pair[] dp = new Pair[nums.length];
+        helper(nums, 0, new ArrayList<>(), k, dp);
         return count;
     }
 
-    public static void isValid(ArrayList<Integer> list) {
-        if (list.size() <= 2) {
-            return;
+    public static boolean isValid(ArrayList<Integer> list, int k, int x) {
+        if (list.size() <= 1)
+            return true;
+        int val = (list.get(list.size() - 2) + list.get(list.size() - 1)) % k;
+        if (val == ((list.get(list.size() - 1) + x) % k)) {
+            count = Math.max(count, list.size() + 1);
+            return true;
         }
-        int val = (list.get(0) + list.get(1)) % 2;
-        for (int i = 1; i < list.size(); i++) {
-            if ((list.get(i - 1) + list.get(i)) % 2 != val) {
-                return;
-            }
-        }
-        count = Math.max(count, list.size());
+        return false;
     }
 
-    public static void helper(int[] nums, int i, ArrayList<Integer> arr) {
+    public static void helper(int[] nums, int i, ArrayList<Integer> arr, int k, Pair[] dp) {
         if (i == nums.length) {
             return;
         }
-        helper(nums, i + 1, new ArrayList<>(arr));
+        helper(nums, i + 1, new ArrayList<>(arr), k, dp);
         int take = nums[i];
-        if (arr.size() > 1) {
-            isValid(arr);
+        if (arr.size() <= 1) {
+            arr.add(take);
+            helper(nums, i + 1, new ArrayList<>(arr), k, dp);
+        } else if (isValid(arr, k, take)) {
+            System.out.println(take);
+            arr.add(take);
+            System.out.println(arr);
+            helper(nums, i + 1, new ArrayList<>(arr), k, dp);
         }
-        arr.add(take);
-        helper(nums, i + 1, new ArrayList<>(arr));
-        if (arr.size() > 1) {
-            isValid(arr);
-        }
-        return;
     }
 
     public static void main(String[] args) {
-        int[] nums = { 1, 2, 1, 2, 1, 2 };
-        System.out.println(maximumLength(nums));
+        int[] nums = { 1, 2, 3, 10, 2 };
+        System.out.println(maximumLength(nums, 6));
     }
 
 }
